@@ -1,0 +1,35 @@
+{
+  "name": "study-hub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:local": "next dev --hostname 127.0.0.1 --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "start:local": "next start --hostname 127.0.0.1 --port 3000",
+    "open:local": "powershell -NoProfile -ExecutionPolicy Bypass -File ./open-local.ps1",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1",
+    "docx": "^9.7.1",
+    "lucide-react": "^1.17.0",
+    "mammoth": "^1.12.0",
+    "next": "15.5.19",
+    "openai": "^6.42.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "unpdf": "^1.6.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
