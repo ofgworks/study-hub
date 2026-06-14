@@ -135,3 +135,13 @@ Bu dosya önemli kararların tarihli ve izlenebilir biçimde tutulması için ku
 - Etki: Ajanlar birbirinin worktree klasorune dokunmayacak. `main` yalnizca kullanici onayiyla merge alacak. GitHub + Vercel tarafinda branch preview deploy akisi kullanilacak.
 - Ilgili dosyalar: `AGENTS.md`, `CLAUDE.md`, `.gitignore`, `OFG-AI-SISTEM/AGENTS.md`, `OFG-AI-SISTEM/CLAUDE.md`, `OFG-AI-SISTEM/02-SISTEM-AKISI/SISTEM-HARITASI.md`, `OFG-AI-SISTEM/06-AI-TALIMATLARI/AI-CALISMA-KURALLARI.md`
 - Sonraki adimlar: GitHub private repo ve Vercel proje baglantisi yapildiktan sonra `main`, `codex/work`, `claude/work` branch deploy'lari dogrulanir.
+
+### 2026-06-14 - GitHub Remote Baglantisi
+
+- Durum: Kabul Edildi
+- Baglam: Yerel `study-hub` Git reposunun GitHub hesabi altinda saklanmasi ve ajan branchlerinin uzakta izlenmesi gerekiyor.
+- Karar: Remote `origin`, `https://github.com/ofgworks/study-hub.git` olarak ayarlandi. `main`, `codex/work` ve `claude/work` branchleri GitHub'a push edildi.
+- Gerekce: GitHub remote, branch izolasyonunun yedekli ve Vercel preview deploy'a hazir sekilde calismasini saglar.
+- Etki: `main` production/integration branch'i, `codex/work` ve `claude/work` ajan branchleri olarak GitHub'da mevcuttur.
+- Ilgili dosyalar: `OFG-AI-SISTEM/08-GOREVLER/AKTIF-GOREVLER.md`, `OFG-AI-SISTEM/05-KARAR-KAYITLARI/KARAR-DEFTERI.md`
+- Sonraki adimlar: Vercel tarafinda `ofgworks/study-hub` reposu baglanir ve branch preview deploy'lari dogrulanir.
