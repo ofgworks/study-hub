@@ -145,3 +145,13 @@ Bu dosya önemli kararların tarihli ve izlenebilir biçimde tutulması için ku
 - Etki: `main` production/integration branch'i, `codex/work` ve `claude/work` ajan branchleri olarak GitHub'da mevcuttur.
 - Ilgili dosyalar: `OFG-AI-SISTEM/08-GOREVLER/AKTIF-GOREVLER.md`, `OFG-AI-SISTEM/05-KARAR-KAYITLARI/KARAR-DEFTERI.md`
 - Sonraki adimlar: Vercel tarafinda `ofgworks/study-hub` reposu baglanir ve branch preview deploy'lari dogrulanir.
+
+### 2026-06-14 - GitHub + Vercel + Local Calisma Duzeni
+
+- Durum: Kabul Edildi
+- Baglam: GitHub ve Vercel baglantilari kuruldu; Supabase'in bu asamada gerekli olup olmadigi degerlendirildi.
+- Karar: Supabase bu fazda kullanilmayacak. GitHub kod ve branch yonetimi, Vercel arayuz deploy/preview kontrolu, local ortam ise gercek belge ve hafiza alani olarak kullanilacak.
+- Gerekce: Uygulamanin mevcut veri modeli `workspace/workshop-brain` icindeki local dosyalara dayaniyor. Supabase'e gecis ayri bir veri migrasyonu ve guvenlik tasarimi gerektirir.
+- Etki: Vercel'de local-only verilerin gorunmemesi hata sayilmaz. Gunluk kullanim `http://127.0.0.1:3000` uzerinden local devam eder.
+- Ilgili dosyalar: `DEPLOYMENT-WORKFLOW.md`, `README.md`, `LOCAL_RUN.md`, `STUDY-HUB-SISTEM.md`, `OFG-AI-SISTEM/02-SISTEM-AKISI/SISTEM-HARITASI.md`
+- Sonraki adimlar: Vercel dashboard'da `main`, `codex/work`, `claude/work` deploy'lari gozle kontrol edilir; ilk gercek uygulama gelistirmesi `codex/work` uzerinden baslatilir.

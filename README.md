@@ -36,3 +36,11 @@ Anahtar yoksa sistem **güvenli kaynak moduna** geçer: bilgi uydurmaz, belgeler
 - `src/app/api/brain/*` — HTTP katmanı (Next.js route handlers)
 - `src/components/brain/*` — ekran bazlı UI modülleri
 - `src/components/WorkshopBrainApp.tsx` — uygulama kabuğu (sidebar + bağlam çubuğu)
+
+## GitHub + Vercel + Local Duzeni
+
+- GitHub kod ve branch yonetimi icin kullanilir.
+- Vercel yalnizca arayuz deploy ve branch preview kontrolu icin kullanilir.
+- Gercek belge ve proje hafizasi yerelde `workspace/workshop-brain/` icinde kalir.
+- Supabase bu asamada kullanilmaz.
+- Detayli akis: `DEPLOYMENT-WORKFLOW.md`.

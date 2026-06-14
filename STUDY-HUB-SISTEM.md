@@ -106,6 +106,26 @@ Detayli yerel calistirma notu:
 
 - `LOCAL_RUN.md`
 
+## GitHub + Vercel + Local Calisma Modeli
+
+Bu sistemde uc katman vardir:
+
+- GitHub: Kod deposu ve branch izolasyonu.
+- Vercel: Production ve preview deploy kontrolu.
+- Local: Gercek belge, hafiza ve gunluk kullanim ortami.
+
+Branch eslesmesi:
+
+- `main`: Onayli ana kaynak ve Vercel production.
+- `codex/work`: Codex isleri ve Vercel preview.
+- `claude/work`: Claude analiz/rapor isleri ve Vercel preview.
+
+Yerel `workspace/workshop-brain` verisi GitHub'a ve Vercel'e gitmez. Vercel'de local-only veri gorunmemesi beklenen davranistir.
+
+Detayli is akis dosyasi:
+
+- `DEPLOYMENT-WORKFLOW.md`
+
 ## AI API Durumu
 
 Uygulamada OpenAI API destegi hazirlanmistir.

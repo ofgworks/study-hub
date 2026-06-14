@@ -122,3 +122,21 @@ flowchart TD
 - Codex yalnizca `study-hub-codex` worktree icinde `codex/work` branch'iyle calisir.
 - Claude yalnizca `study-hub-claude` worktree icinde `claude/work` branch'iyle calisir.
 - Preview deploy'lar branch bazlidir; production merge kullanici onayi ister.
+
+## GitHub + Vercel + Local Katmanlari
+
+```mermaid
+flowchart TD
+    L[Local: workspace/workshop-brain] --> U[Gunluk kullanim ve gercek belgeler]
+    G[GitHub: ofgworks/study-hub] --> B[main, codex/work, claude/work]
+    B --> V[Vercel deploy ve preview]
+    V --> P[Arayuz kontrolu]
+    U --> C[Onayli degisiklik karari]
+    C --> B
+```
+
+- Local ortam gercek veri ve belge kaynagidir.
+- GitHub kod ve branch gecmisini tutar.
+- Vercel arayuzu internette test etmek icindir.
+- Supabase bu asamada kullanilmaz.
+- Vercel'de `workspace/workshop-brain` verisi beklenmez.

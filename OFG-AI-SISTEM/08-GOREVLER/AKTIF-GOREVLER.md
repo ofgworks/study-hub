@@ -53,3 +53,4 @@ Bu dosya devam eden işleri checkbox formatında takip etmek için kullanılır.
 
 - [x] Codex ve Claude icin git worktree / branch izolasyonu kurallarini netlestir. - Sorumlu: Codex - Tarih: 2026-06-14 - Ilgili dosyalar: `AGENTS.md`, `CLAUDE.md`, `.gitignore`, `OFG-AI-SISTEM/AGENTS.md`, `OFG-AI-SISTEM/CLAUDE.md`, `OFG-AI-SISTEM/06-AI-TALIMATLARI/AI-CALISMA-KURALLARI.md`, `OFG-AI-SISTEM/02-SISTEM-AKISI/SISTEM-HARITASI.md`
 - [x] GitHub remote baglantisini `ofgworks/study-hub` olarak kur ve `main`, `codex/work`, `claude/work` branchlerini push et. - Sorumlu: Codex - Tarih: 2026-06-14 - Ilgili remote: `https://github.com/ofgworks/study-hub.git`
+- [x] GitHub + Vercel + Local calisma duzenini kalici dokumantasyona isle; Supabase'i bu fazin disinda tut. - Sorumlu: Codex - Tarih: 2026-06-14 - Ilgili dosyalar: `DEPLOYMENT-WORKFLOW.md`, `README.md`, `LOCAL_RUN.md`, `STUDY-HUB-SISTEM.md`, `OFG-AI-SISTEM/02-SISTEM-AKISI/SISTEM-HARITASI.md`
